@@ -1,0 +1,323 @@
+/* Defines how the width and height of the element are calculated: whether they include the padding and borders or not. */
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* base.globals */
+
+body {
+    font-family: "robotomono";
+    color: #eee;
+    background: #0055FF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: #eee;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+h3, h4, h5, h6 {
+    font-size: 16px;
+}
+
+@media (min-width: 760px) {
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 54px;
+        line-height: 66px;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    h4, h5, h6 {
+        font-size: 16px;
+    }
+}
+
+p {
+    font-size: 16px;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #00FF2B;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #D4FF00;
+}
+
+a:focus {
+    outline: 0;
+}
+
+/* component.container */
+.container {
+    background: linear-gradient(to top, #0055FF, #003399);
+}
+
+@media (max-width:759px) {
+    .container {
+        padding-top: 180px;
+    }
+} 
+
+
+/* component.header */
+.header {
+    
+}
+
+.header__logo {
+    padding-top: 30px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 759px) {
+    .header {
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: white;
+
+        padding: 30px;
+
+        visibility: hidden;
+        opacity: 0.7;
+        transform: translateY(-100%);
+        transition: all .2s ease-in-out;
+    }
+
+    .header.is-open {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 760px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        visibility: visible;
+        height: 160px;
+        background: rgba(255,255,255,0.3);
+        padding: 0 24px;
+        text-align: center;
+    }
+}
+
+/* component.nav */
+.nav {
+    overflow: hidden;
+    margin-top: 24px;
+}
+
+.nav__item {
+}
+
+.nav__link {
+    display: block;
+    padding: 24px;
+    font-size: 24px;
+    color: #666;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: #222;
+}
+
+@media (min-width: 760px) {
+
+    .nav {
+        transform: translateX(50%);
+    }
+
+    .nav__link {
+        padding: 12px;
+        float: left;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+    }
+}
+
+/* component.hamburger */
+.hamburger {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 3;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+}
+
+@media (min-width: 760px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+.hamburger:after {
+    top: 8px;
+}
+s
+.hamburger:before {
+    top: 12px;
+} 
+
+/* component.section */
+
+.section {
+    padding: 36px;
+    border-top: 2px solid rgba(255,255,255,0.25);
+}
+
+.section__title {
+    margin-bottom: 36px;
+}
+
+.section__content {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.section__text {}
+
+.section--about {
+}
+
+.section--marsians {
+} 
+
+.section--evacuation {
+}
+
+@media (min-width: 760px) {
+    .section {
+        padding: 96px 36px;
+    }
+}
+
+/* component.section */
+
+.section {
+    padding: 36px;
+}
+
+@media (min-width: 760px) {
+    .section {
+        padding: 96px 36px;
+    }
+}
+
+/* component.wrapper */
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* components.grid */
+
+.g--three {
+    overflow: hidden;
+}
+
+.g--three__item {
+}
+
+@media (min-width: 760px) {
+    .g--three__item {
+        width: 33.33333%;
+        float: left;
+    }
+}
+
+.g--three__item p {
+    padding-right: 10px;
+}
+
+/* component.avatar */
+
+.avatar {
+    border-radius: 50%;
+} 
+
+
+/* component.footer */
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255, 0.6);
+    padding: 30px;
+} 

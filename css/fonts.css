@@ -1,0 +1,66 @@
+/* Roboto Mono */
+
+@font-face {
+    font-family: 'robotomono';
+    src: url('../fonts/roboto-mono/robotomono-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-mono/robotomono-bold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotomono';
+    src: url('../fonts/roboto-mono/robotomono-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-mono/robotomono-bolditalic-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'robotomono';
+    src: url('../fonts/roboto-mono/robotomono-italic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-mono/robotomono-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'robotomono';
+    src: url('../fonts/roboto-mono/robotomono-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-mono/robotomono-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotomono';
+    src: url('../fonts/roboto-mono/robotomono-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-mono/robotomono-lightitalic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'robotomono';
+    src: url('../fonts/roboto-mono/robotomono-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-mono/robotomono-medium-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotomono';
+    src: url('../fonts/roboto-mono/robotomono-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-mono/robotomono-mediumitalic-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'robotomono';
+    src: url('../fonts/roboto-mono/robotomono-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-mono/robotomono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
